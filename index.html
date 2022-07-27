@@ -12,7 +12,10 @@
 
 <body>
     <div class="left">
-        <img src="taxi_logo.png"></img>
+        <div class="logo">
+            <h1>City Cab Taxi</h1>
+            <img src="taxi_logo.png"></img>
+        </div>
         <img src="taxi.avif" width="500" height="600">
         <caption>Photo by <a
                 href="https://unsplash.com/@refargotohp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">refargotohp</a>
@@ -26,8 +29,25 @@
             moving.</h1>
         <section class="details">
             <h2>Just a few details!</h2>
+            <form action="#" method="get">
+                <div>
+                  <label for="user_email">*Email:</label>
+                  <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <br>
+              
+                <div>
+                  <label for="user_password">*Password:</label>
+                  <input type="password" id="user_password" name="user_password" required>
+                </div>
+              
+                <button type="submit">Login</button>
+              </form>
+
         </section>
-        <section class="">
+
+
+        <section class="existing-account">
             <button>Create Account</button>
             <h3>Already have an account? <a href="">Log in</a></h3>
         </section>
