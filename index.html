@@ -8,25 +8,40 @@
     <title>Sign up</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="left">
-        <div class="logo">
-            <h1>City Cab Taxi</h1>
-            <img src="taxi_logo.png"></img>
-        </div>
-        <img src="taxi.avif" width="500" height="600">
-        <caption>Photo by <a
-                href="https://unsplash.com/@refargotohp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">refargotohp</a>
-            on <a
-                href="https://unsplash.com/t/travel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </caption>
+    <div class="left-container">
 
+
+        <img class="background-image" src="taxi.avif">
+
+
+        <div class="logo-overlay">
+            <div class="overlay-container">
+                <h1>City Cab Taxi</h1>
+                <img src="taxi_logo.png" alt="City taxi"></img>
+            </div>
+        </div>
+
+        <p>Photo by<a
+            href="https://unsplash.com/@refargotohp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">refargotohp</a>
+        on <a
+            href="https://unsplash.com/t/travel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
     </div>
-    <div class="right">
-        <h1>This is a great taxi service! You need help getting from A to B, we've got you covered. Sign up now to get
-            moving.</h1>
+
+
+    <div class="right-container">
+        <section class="intro">
+            <h1>This is a great taxi service! You need help getting from A to B, we've got you covered. Sign up now to
+                get
+                moving.</h1>
+        </section>
+
         <section class="details">
             <h2>Just a few details!</h2>
             <form action="#" method="get">
@@ -44,20 +59,20 @@
                 <br>
 
                 <div>
-                  <label for="user_email">Email:</label>
-                  <input type="email" id="user_email" name="user_email" required>
+                    <label for="user_email">Email:</label>
+                    <input type="email" id="user_email" name="user_email" required>
                 </div>
                 <br>
-                
+
                 <div>
                     <label for="user_number">Phone number:</label>
                     <input type="number" id="user_number" name="user_number" required>
-                  </div>
-                  <br>
-              
+                </div>
+                <br>
+
                 <div>
-                  <label for="user_password">Password:</label>
-                  <input type="password" id="user_password" name="user_password" required>
+                    <label for="user_password">Password:</label>
+                    <input type="password" id="user_password" name="user_password" required>
                 </div>
                 <br>
                 <div>
@@ -66,9 +81,9 @@
                 </div>
 
 
-              
+
                 <button type="submit">Create Account</button>
-              </form>
+            </form>
 
         </section>
 
