@@ -1,9 +1,11 @@
-const password = document.querySelector("#user_password");
+const password = document.querySelector("#password");
 const passwordConfirm = document.querySelector("#user_password_confirm");
 const meter = document.querySelector("#password-strength-meter");
 const text = document.getElementById('password-strength-text');
 
 const text2 = document.querySelector("#password-match-text");
+
+
 const debounce = (func, wait) => {
     let timeout;
 
@@ -63,7 +65,7 @@ function validate(password) {
 }
 
 
-var returnedFunction2 = debounce(function () {
+var returnedFunction2 = debounce(function pass() {
     var val = password.value;
     var result = validate(val);
 
